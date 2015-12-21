@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC50B6A11C28939000D912CA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DC50B6A01C28939000D912CA /* README.md */; };
-		DC50B6A31C28939900D912CA /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = DC50B6A21C28939900D912CA /* CHANGELOG.md */; };
+		DC50B6A11C28939000D912CA /* README.md in Frameworks */ = {isa = PBXBuildFile; fileRef = DC50B6A01C28939000D912CA /* README.md */; };
+		DC50B6A31C28939900D912CA /* CHANGELOG.md in Frameworks */ = {isa = PBXBuildFile; fileRef = DC50B6A21C28939900D912CA /* CHANGELOG.md */; };
 		DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EAC1C2495F5004E6394 /* AppDelegate.swift */; };
 		DC854EB21C2495F5004E6394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB01C2495F5004E6394 /* Main.storyboard */; };
 		DC854EB41C2495F5004E6394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB31C2495F5004E6394 /* Assets.xcassets */; };
@@ -35,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC50B6A31C28939900D912CA /* CHANGELOG.md in Frameworks */,
+				DC50B6A11C28939000D912CA /* README.md in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 				DC854EA51C2495F5004E6394 /* Sources */,
 				DC854EA61C2495F5004E6394 /* Frameworks */,
 				DC854EA71C2495F5004E6394 /* Resources */,
+				DC50B6A51C28A02600D912CA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -139,15 +142,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DC50B6A51C28A02600D912CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC854EA51C2495F5004E6394 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */,
-				DC50B6A31C28939900D912CA /* CHANGELOG.md in Sources */,
 				DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */,
-				DC50B6A11C28939000D912CA /* README.md in Sources */,
 				DC854EC11C24964A004E6394 /* Patience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Patience/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.pandorga.Patience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Patience/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.pandorga.Patience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
