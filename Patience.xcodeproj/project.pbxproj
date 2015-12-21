@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC50B6A11C28939000D912CA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DC50B6A01C28939000D912CA /* README.md */; };
+		DC50B6A31C28939900D912CA /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = DC50B6A21C28939900D912CA /* CHANGELOG.md */; };
 		DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EAC1C2495F5004E6394 /* AppDelegate.swift */; };
-		DC854EAF1C2495F5004E6394 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EAE1C2495F5004E6394 /* ViewController.swift */; };
 		DC854EB21C2495F5004E6394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB01C2495F5004E6394 /* Main.storyboard */; };
 		DC854EB41C2495F5004E6394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB31C2495F5004E6394 /* Assets.xcassets */; };
 		DC854EB71C2495F5004E6394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB51C2495F5004E6394 /* LaunchScreen.storyboard */; };
+		DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EBE1C249623004E6394 /* DemoViewController.swift */; };
+		DC854EC11C24964A004E6394 /* Patience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EC01C24964A004E6394 /* Patience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC50B6A01C28939000D912CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DC50B6A21C28939900D912CA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DC854EA91C2495F5004E6394 /* Patience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC854EAC1C2495F5004E6394 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC854EAE1C2495F5004E6394 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC854EB11C2495F5004E6394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC854EB31C2495F5004E6394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC854EB61C2495F5004E6394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC854EB81C2495F5004E6394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC854EBE1C249623004E6394 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		DC854EC01C24964A004E6394 /* Patience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,8 @@
 		DC854EA01C2495F5004E6394 = {
 			isa = PBXGroup;
 			children = (
+				DC50B6A01C28939000D912CA /* README.md */,
+				DC50B6A21C28939900D912CA /* CHANGELOG.md */,
 				DC854EAB1C2495F5004E6394 /* Patience */,
 				DC854EAA1C2495F5004E6394 /* Products */,
 			);
@@ -55,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				DC854EAC1C2495F5004E6394 /* AppDelegate.swift */,
-				DC854EAE1C2495F5004E6394 /* ViewController.swift */,
+				DC854EC01C24964A004E6394 /* Patience.swift */,
+				DC854EBE1C249623004E6394 /* DemoViewController.swift */,
 				DC854EB01C2495F5004E6394 /* Main.storyboard */,
 				DC854EB31C2495F5004E6394 /* Assets.xcassets */,
 				DC854EB51C2495F5004E6394 /* LaunchScreen.storyboard */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC854EAF1C2495F5004E6394 /* ViewController.swift in Sources */,
+				DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */,
+				DC50B6A31C28939900D912CA /* CHANGELOG.md in Sources */,
 				DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */,
+				DC50B6A11C28939000D912CA /* README.md in Sources */,
+				DC854EC11C24964A004E6394 /* Patience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +296,7 @@
 				DC854EBD1C2495F5004E6394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
