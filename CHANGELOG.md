@@ -5,6 +5,10 @@ This project adheres to popular [Versionado Semántico](http://semver.org/) and 
 ## [Unreleased]
 
 ## 1.0.0 - 2015-12-22
+### Changed
+- Encapsulation was wrong, public methods was not visible to users
+
+## 1.0.0 - 2015-12-22
 ### Added
 - `Podspec` file created
 

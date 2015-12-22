@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "Patience"
-s.summary = "Patience is a easy to use UIActivityIndicator"
+s.summary = "Patience is an easy to use UIActivityIndicator made in Swift 2"
 s.requires_arc = true
 
 # 2
-s.version = "1.0.0"
+s.version = "1.0.1"
 
 # 3
 s.license = "MIT"
@@ -19,8 +19,8 @@ s.author = { "Felix Ayala" => "felix1262@gmail.com" }
 # 5
 s.homepage = "https://github.com/rockbarato/Patience"
 
-# 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/rockbarato/FFBackgroundParallax.git", :tag => "#{s.version}"}
+# 6
+s.source = { :git => "https://github.com/rockbarato/Patience.git", :tag => "#{s.version}"}
 
 # 7
 s.framework = "UIKit"

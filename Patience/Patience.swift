@@ -14,19 +14,19 @@ public class Patience:UIView {
 	
 	public let activityIndicator = UIActivityIndicatorView()
 	
-	private var isVisible = false
+	public var isVisible = false
 	
 	private let kNavigationBarHeight:CGFloat = 44.0
 	
-	class func show(canvas: UIView) {
+	public class func show(canvas: UIView) {
 		self.sharedInstance.showActivityIndicator(canvas, true)
 	}
 	
-	class func show(canvas: UIView, _ hasNavigationBar: Bool) {
+	public class func show(canvas: UIView, _ hasNavigationBar: Bool) {
 		self.sharedInstance.showActivityIndicator(canvas, hasNavigationBar)
 	}
 	
-	class func hide() {
+	public class func hide() {
 		self.sharedInstance.hideActivityIndicator()
 	}
 	

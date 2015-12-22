@@ -15,6 +15,7 @@
 		DC854EB71C2495F5004E6394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB51C2495F5004E6394 /* LaunchScreen.storyboard */; };
 		DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EBE1C249623004E6394 /* DemoViewController.swift */; };
 		DC854EC11C24964A004E6394 /* Patience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EC01C24964A004E6394 /* Patience.swift */; };
+		DCE1A9831C29DB6F00815782 /* Patience.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DCE1A9821C29DB6F00815782 /* Patience.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DC854EB81C2495F5004E6394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC854EBE1C249623004E6394 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		DC854EC01C24964A004E6394 /* Patience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patience.swift; sourceTree = "<group>"; };
+		DCE1A9821C29DB6F00815782 /* Patience.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Patience.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		DC854EAB1C2495F5004E6394 /* Patience */ = {
 			isa = PBXGroup;
 			children = (
+				DCE1A9821C29DB6F00815782 /* Patience.podspec */,
 				DC854EAC1C2495F5004E6394 /* AppDelegate.swift */,
 				DC854EC01C24964A004E6394 /* Patience.swift */,
 				DC854EBE1C249623004E6394 /* DemoViewController.swift */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC854EB71C2495F5004E6394 /* LaunchScreen.storyboard in Resources */,
+				DCE1A9831C29DB6F00815782 /* Patience.podspec in Resources */,
 				DC854EB41C2495F5004E6394 /* Assets.xcassets in Resources */,
 				DC854EB21C2495F5004E6394 /* Main.storyboard in Resources */,
 			);
