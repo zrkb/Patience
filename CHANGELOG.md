@@ -4,6 +4,10 @@ This project adheres to popular [Versionado Semántico](http://semver.org/) and 
 
 ## [Unreleased]
 
+## 1.0.0 - 2015-12-22
+### Added
+- `Podspec` file created
+
 ## 0.1.0 - 2015-12-21
 ### Added
 - `CHANGELOG`, `README` and `.gitignore` files added
