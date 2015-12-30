@@ -4,7 +4,12 @@ This project adheres to popular [Versionado Semántico](http://semver.org/) and 
 
 ## [Unreleased]
 
-## 1.0.0 - 2015-12-22
+## 1.0.2 - 2015-12-30
+### Changed
+- Sources files in `Podspec` file was wrong
+- `README` file updated with Cocoapods Support
+
+## 1.0.1 - 2015-12-22
 ### Changed
 - Encapsulation was wrong, public methods was not visible to users
 
