@@ -10,7 +10,14 @@ import UIKit
 
 public class Patience:UIView {
 	
-	public static let sharedInstance = Patience()
+	class func sharedManager() -> Patience {
+		
+		struct Static {
+			static let Manager = Patience()
+		}
+		
+		return Static.Manager
+	}
 	
 	public let activityIndicator = UIActivityIndicatorView()
 	
@@ -18,34 +25,30 @@ public class Patience:UIView {
 	
 	private let kNavigationBarHeight:CGFloat = 44.0
 	
-	public class func show(canvas: UIView) {
-		self.sharedInstance.showActivityIndicator(canvas, true)
-	}
-	
-	public class func show(canvas: UIView, _ hasNavigationBar: Bool) {
-		self.sharedInstance.showActivityIndicator(canvas, hasNavigationBar)
+	public class func show(canvas: UIView, _ hasNavigationBar: Bool = true) {
+		Patience.sharedManager().showActivityIndicator(canvas, hasNavigationBar)
 	}
 	
 	public class func hide() {
-		self.sharedInstance.hideActivityIndicator()
+		Patience.sharedManager().hideActivityIndicator()
 	}
 	
-	func showActivityIndicator(canvas: UIView, _ hasNavigationBar: Bool) {
+	func showActivityIndicator(canvas: UIView, _ hasNavigationBar: Bool = true) {
 		
-		self.isVisible = true
+		isVisible = true
 		
 		let window = UIApplication.sharedApplication().windows.first!
 		
-		self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
-		self.activityIndicator.frame = canvas.bounds
-		self.activityIndicator.backgroundColor = UIColor.clearColor()
-		self.activityIndicator.center = CGPointMake(window.bounds.size.width / 2.0, (window.bounds.size.height / 2.0) - (hasNavigationBar ? kNavigationBarHeight : 0));
-		self.activityIndicator.startAnimating()
+		activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+		activityIndicator.frame = canvas.bounds
+		activityIndicator.backgroundColor = UIColor.clearColor()
+		activityIndicator.center = CGPointMake(window.bounds.size.width / 2.0, (window.bounds.size.height / 2.0) - (hasNavigationBar ? kNavigationBarHeight : 0));
+		activityIndicator.startAnimating()
 		
-		self.activityIndicator.activityIndicatorViewStyle = .Gray
-		self.activityIndicator.startAnimating()
+		activityIndicator.activityIndicatorViewStyle = .Gray
+		activityIndicator.startAnimating()
 		
-		canvas.addSubview(self.activityIndicator)
+		canvas.addSubview(activityIndicator)
 	}
 	
 	func hideActivityIndicator() {
