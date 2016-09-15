@@ -3,7 +3,7 @@ Patience
 
 [![License](https://img.shields.io/github/license/rockbarato/Patience.svg)](http://opensource.org/licenses/MIT)
 ![Plaform](https://img.shields.io/badge/platform-iOS-2886FD.svg)
-![Language](https://img.shields.io/badge/language-Swift%202-F48041.svg)
+![Language](https://img.shields.io/badge/language-Swift%203.0-F48041.svg)
 [![Tag](https://img.shields.io/github/tag/rockbarato/Patience.svg)](https://github.com/rockbarato/Patience)
 
 
@@ -12,13 +12,19 @@ Patience
 > Instead of adding the source files directly to your project, you may want to consider using [CocoaPods](http://cocoapods.org/) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify `Patience` as a dependency in your `Podfile` with:
 
 ```ruby
-pod 'Patience', '~> 1.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+
+target "TargetName" do
+	pod 'Patience', '~> 2.0'
+end
 ```
 But if you want to do it the old fashioned way, just add `Patience.swift` file directly to your project.
 
 ## Requirements
 
-* iOS 7.0 and above
+* iOS 8.0 and above
+* Swift 3.0
 
 ## Usage
 
@@ -39,6 +45,7 @@ Patience.hide()
 ## TODO
 
 * More customization
+* Redraw on rotate
 
 ## Collaboration
 

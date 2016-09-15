@@ -4,6 +4,10 @@ This project adheres to popular [Semver](http://semver.org/) and [Keep a CHANGEL
 
 ## [Unreleased]
 
+## 2.0 - 2016-09-20
+### Changed
+* Update to Swift 3.0
+
 ## 1.1.0 - 2016-05-24
 ### Changed
 * Minor changes with default values

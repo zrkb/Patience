@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC50B6A11C28939000D912CA /* README.md in Frameworks */ = {isa = PBXBuildFile; fileRef = DC50B6A01C28939000D912CA /* README.md */; };
-		DC50B6A31C28939900D912CA /* CHANGELOG.md in Frameworks */ = {isa = PBXBuildFile; fileRef = DC50B6A21C28939900D912CA /* CHANGELOG.md */; };
+		DC2D3A241D26B02100A17240 /* Patience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2D3A231D26B02100A17240 /* Patience.swift */; };
 		DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EAC1C2495F5004E6394 /* AppDelegate.swift */; };
 		DC854EB21C2495F5004E6394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB01C2495F5004E6394 /* Main.storyboard */; };
 		DC854EB41C2495F5004E6394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB31C2495F5004E6394 /* Assets.xcassets */; };
 		DC854EB71C2495F5004E6394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB51C2495F5004E6394 /* LaunchScreen.storyboard */; };
 		DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EBE1C249623004E6394 /* DemoViewController.swift */; };
-		DC854EC11C24964A004E6394 /* Patience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EC01C24964A004E6394 /* Patience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC2D3A231D26B02100A17240 /* Patience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patience.swift; sourceTree = "<group>"; };
 		DC50B6A01C28939000D912CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC50B6A21C28939900D912CA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DC854EA91C2495F5004E6394 /* Patience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patience.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +26,6 @@
 		DC854EB61C2495F5004E6394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC854EB81C2495F5004E6394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC854EBE1C249623004E6394 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		DC854EC01C24964A004E6394 /* Patience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC50B6A31C28939900D912CA /* CHANGELOG.md in Frameworks */,
-				DC50B6A11C28939000D912CA /* README.md in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				DC854EAC1C2495F5004E6394 /* AppDelegate.swift */,
-				DC854EC01C24964A004E6394 /* Patience.swift */,
 				DC854EBE1C249623004E6394 /* DemoViewController.swift */,
+				DC2D3A231D26B02100A17240 /* Patience.swift */,
 				DC854EB01C2495F5004E6394 /* Main.storyboard */,
 				DC854EB31C2495F5004E6394 /* Assets.xcassets */,
 				DC854EB51C2495F5004E6394 /* LaunchScreen.storyboard */,
@@ -86,6 +82,7 @@
 				DC854EA61C2495F5004E6394 /* Frameworks */,
 				DC854EA71C2495F5004E6394 /* Resources */,
 				DC50B6A51C28A02600D912CA /* ShellScript */,
+				DC2D39E61D256C1700A17240 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -103,11 +100,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Pandorga;
 				TargetAttributes = {
 					DC854EA81C2495F5004E6394 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = TZC6423TE8;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -143,6 +142,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		DC2D39E61D256C1700A17240 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		DC50B6A51C28A02600D912CA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,7 +177,7 @@
 			files = (
 				DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */,
 				DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */,
-				DC854EC11C24964A004E6394 /* Patience.swift in Sources */,
+				DC2D3A241D26B02100A17240 /* Patience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,8 +216,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -248,8 +262,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -268,6 +284,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -276,11 +293,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TZC6423TE8;
 				INFOPLIST_FILE = Patience/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.pandorga.Patience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -288,11 +307,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TZC6423TE8;
 				INFOPLIST_FILE = Patience/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.pandorga.Patience;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
