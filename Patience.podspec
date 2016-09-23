@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "Patience"
-s.summary = "Patience is an easy to use UIActivityIndicator made in Swift 2"
+s.summary = "Patience is an easy to use UIActivityIndicator made in Swift 3"
 s.requires_arc = true
 
 # 2
-s.version = "1.0.2"
+s.version = "2.0"
 
 # 3
 s.license = "MIT"
