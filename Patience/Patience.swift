@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Patience {
+public class Patience {
 	
 	// MARK: - Properties
 	let backgroundView = UIView()
@@ -28,7 +28,7 @@ class Patience {
 	
 		- returns: A shared instance from `Patience` class
 	*/
-	class func sharedManager() -> Patience {
+	public class func sharedManager() -> Patience {
 		
 		struct Static {
 			static let Manager = Patience()
@@ -37,7 +37,7 @@ class Patience {
 		return Static.Manager
 	}
 	
-	class func show(_ canvas: UIView? = nil) {
+	public class func show(_ canvas: UIView? = nil) {
 		if let canvas = canvas {
 			Patience.sharedManager().showInView(canvas)
 		} else if let window: UIWindow = UIApplication.shared.keyWindow {
@@ -47,7 +47,7 @@ class Patience {
 		}
 	}
 	
-	class func hide() {
+	public class func hide() {
 		Patience.sharedManager().hideActivityIndicator()
 	}
 	
