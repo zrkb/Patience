@@ -19,6 +19,7 @@ target "TargetName" do
 	pod 'Patience', '~> 2.0'
 end
 ```
+
 But if you want to do it the old fashioned way, just add `Patience.swift` file directly to your project.
 
 ## Requirements
@@ -33,7 +34,7 @@ Patience.show(self.view)
 ```
 or if you are implementing it on a UITableView you can do:
 
-``````swift
+```swift
 Patience.show(self.view, true)
 ```
 You can dismiss the loader in this way:
