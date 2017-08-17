@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0B4F431F455A4B00251133 /* Patience.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Patience.podspec; sourceTree = "<group>"; };
 		DC2D3A231D26B02100A17240 /* Patience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patience.swift; sourceTree = "<group>"; };
 		DC50B6A01C28939000D912CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC50B6A21C28939900D912CA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 			children = (
 				DC50B6A01C28939000D912CA /* README.md */,
 				DC50B6A21C28939900D912CA /* CHANGELOG.md */,
+				DC0B4F431F455A4B00251133 /* Patience.podspec */,
 				DC854EAB1C2495F5004E6394 /* Patience */,
 				DC854EAA1C2495F5004E6394 /* Products */,
 			);
