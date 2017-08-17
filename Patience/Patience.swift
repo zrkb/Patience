@@ -16,12 +16,10 @@ public class Patience {
 	var isVisible = false
 	private let kNavigationBarHeight: CGFloat = 44.0
 	
-	
 	/**
 		This prevent instance initialization.
 	*/
 	private init() {}
-	
 	
 	/**
 		Shared Instance used to call methods without initialization.
@@ -78,7 +76,7 @@ public class Patience {
 		
 		UIView.animate(withDuration: 0.15, delay: 0, options: (.curveEaseIn), animations: { () -> Void in
 			self.backgroundView.alpha = 0
-		}) { (finished) -> Void in
+		}) { (_) -> Void in
 			self.backgroundView.removeFromSuperview()
 			self.isVisible = false
 		}
