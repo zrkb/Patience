@@ -4,6 +4,11 @@ This project adheres to popular [Semver](http://semver.org/) and [Keep a CHANGEL
 
 ## [Unreleased]
 
+## 3.0.0 - 2017-10-22
+### Changed
+* Replace `UIActivityIndicator` by a spinner
+* Update to Swift 4.0
+
 ## 2.0 - 2016-09-20
 ### Changed
 * Update to Swift 3.0

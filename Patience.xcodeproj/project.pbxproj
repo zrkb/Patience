@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC2D3A241D26B02100A17240 /* Patience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2D3A231D26B02100A17240 /* Patience.swift */; };
+		DC4A23EB1F9BAFEB00174C2F /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4A23EA1F9BAFEB00174C2F /* Spinner.swift */; };
 		DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC854EAC1C2495F5004E6394 /* AppDelegate.swift */; };
 		DC854EB21C2495F5004E6394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB01C2495F5004E6394 /* Main.storyboard */; };
 		DC854EB41C2495F5004E6394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC854EB31C2495F5004E6394 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		DC0B4F431F455A4B00251133 /* Patience.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Patience.podspec; sourceTree = "<group>"; };
 		DC2D3A231D26B02100A17240 /* Patience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patience.swift; sourceTree = "<group>"; };
+		DC4A23EA1F9BAFEB00174C2F /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		DC50B6A01C28939000D912CA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC50B6A21C28939900D912CA /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		DC854EA91C2495F5004E6394 /* Patience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patience.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 			children = (
 				DC854EAC1C2495F5004E6394 /* AppDelegate.swift */,
 				DC854EBE1C249623004E6394 /* DemoViewController.swift */,
+				DC4A23EA1F9BAFEB00174C2F /* Spinner.swift */,
 				DC2D3A231D26B02100A17240 /* Patience.swift */,
 				DC854EB01C2495F5004E6394 /* Main.storyboard */,
 				DC854EB31C2495F5004E6394 /* Assets.xcassets */,
@@ -180,6 +183,7 @@
 				DC854EBF1C249623004E6394 /* DemoViewController.swift in Sources */,
 				DC854EAD1C2495F5004E6394 /* AppDelegate.swift in Sources */,
 				DC2D3A241D26B02100A17240 /* Patience.swift in Sources */,
+				DC4A23EB1F9BAFEB00174C2F /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

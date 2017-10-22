@@ -4,11 +4,11 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "Patience"
-s.summary = "Patience is an easy to use UIActivityIndicator made in Swift 3"
+s.summary = "Patience is an easy to use Spinner made in Swift 4"
 s.requires_arc = true
 
 # 2
-s.version = "2.0.2"
+s.version = "3.0.0"
 
 # 3
 s.license = "MIT"
@@ -26,6 +26,6 @@ s.source = { :git => "https://github.com/rockbarato/Patience.git", :tag => "#{s.
 s.framework = "UIKit"
 
 # 8
-s.source_files = "Patience/**/Patience.{swift}"
+s.source_files = "Patience/**/Patience.{swift}", "Patience/**/Spinner.{swift}"
 
 end

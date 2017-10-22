@@ -12,9 +12,10 @@ public class Patience {
 	
 	// MARK: - Properties
 	let backgroundView = UIView()
-	let activityIndicator = UIActivityIndicatorView()
 	var isVisible = false
 	private let kNavigationBarHeight: CGFloat = 44.0
+	
+	var spinnerView = Spinner()
 	
 	/**
 		This prevent instance initialization.
@@ -51,20 +52,26 @@ public class Patience {
 	
 	func showInView(_ canvas: UIView) {
 		
+		if isVisible {
+			return
+		}
+		
 		isVisible = true
 		
 		backgroundView.frame = canvas.frame
 		backgroundView.backgroundColor = UIColor(white: 1.0, alpha: 0.9)
 		backgroundView.alpha = 0
 		
-		activityIndicator.activityIndicatorViewStyle = .gray
-		activityIndicator.frame = canvas.bounds
-		activityIndicator.backgroundColor = UIColor.clear
-		activityIndicator.activityIndicatorViewStyle = .gray
-		activityIndicator.startAnimating()
-		activityIndicator.center = CGPoint(x: backgroundView.frame.width / 2.0, y: (backgroundView.frame.height / 2.0))
+		let size: CGFloat = 40.0
+		let pos = CGPoint(x: backgroundView.center.x - (size / 2.0), y: backgroundView.center.y - (size / 2.0))
+		backgroundView.addSubview(spinnerView)
+		spinnerView.frame = CGRect(x: pos.x, y: pos.y, width: size, height: size)
+
+		spinnerView.circleLayer.lineWidth = 4.0
+		spinnerView.circleLayer.strokeColor = UIColor(red: 0.351, green: 0.264, blue: 0.580, alpha: 1).cgColor
+		spinnerView.beginRefreshing()
 		
-		backgroundView.addSubview(activityIndicator)
+		backgroundView.addSubview(spinnerView)
 		canvas.addSubview(backgroundView)
 		
 		UIView.animate(withDuration: 0.2, delay: 0, options: (.curveEaseIn), animations: {
@@ -79,6 +86,7 @@ public class Patience {
 		}) { (_) -> Void in
 			self.backgroundView.removeFromSuperview()
 			self.isVisible = false
+			self.spinnerView.endRefreshing()
 		}
 	}
 }
